@@ -2,11 +2,11 @@ import intro from "../images/illustration-intro.svg";
 
 const Hero = () => {
   return (
-    <div className="Hero">
-      <div className="container">
+    <div className="hero">
+      <div className="container-1">
         <img src={intro} alt="" />
       </div>
-      <div className="container">
+      <div className="container-2">
         <h1>Bring everyone together to build better products.</h1>
         <p>
           Manage makes it simple for software teams to plan day-to-day tasks
