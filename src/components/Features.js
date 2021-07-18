@@ -1,6 +1,6 @@
 const Features = () => {
   return (
-    <div className="features">
+    <section className="features">
       <div className="container">
         <h2>What’s different about Manage?</h2>
         <p>
@@ -47,7 +47,7 @@ const Features = () => {
           </li>
         </ol>
       </div>
-    </div>
+    </section>
   );
 };
 

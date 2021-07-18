@@ -7,7 +7,7 @@ const Navbar = ({ active, show, activateNav }) => {
     <div className="navbar">
       <div className="logo">
         <img src={logo} alt="" />
-        <div className="hamburger" onClick={activateNav}>
+        <div className={`hamburger ${show}`} onClick={activateNav}>
           {!active ? <img src={ham} alt="" /> : <img src={close} alt="" />}
         </div>
       </div>

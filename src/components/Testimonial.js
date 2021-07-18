@@ -5,7 +5,7 @@ import shanai from "../images/avatar-shanai.png";
 
 const Testimonial = () => {
   return (
-    <div className="testimonial">
+    <section className="testimonial">
       <h2>What they’ve said</h2>
       <div className="slider">
         <figure className="person">
@@ -54,7 +54,7 @@ const Testimonial = () => {
         </figure>
       </div>
       <button className="get-started">Get Started</button>
-    </div>
+    </section>
   );
 };
 

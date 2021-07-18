@@ -2,7 +2,7 @@ import intro from "../images/illustration-intro.svg";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="container-1">
         <img src={intro} alt="" />
       </div>
@@ -14,7 +14,7 @@ const Hero = () => {
         </p>
         <button className="get-started">Get Started</button>
       </div>
-    </div>
+    </section>
   );
 };
 
