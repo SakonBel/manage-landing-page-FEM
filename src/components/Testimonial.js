@@ -53,6 +53,12 @@ const Testimonial = () => {
           </blockquote>
         </figure>
       </div>
+      <div className="pagination">
+        <div className="item"></div>
+        <div className="item"></div>
+        <div className="item"></div>
+        <div className="item"></div>
+      </div>
       <button className="get-started">Get Started</button>
     </section>
   );

@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <section className="features">
-      <div className="container">
+      <div className="container-1">
         <h2>What’s different about Manage?</h2>
         <p>
           Manage provides all the functionality your team needs, without the
@@ -9,7 +9,7 @@ const Features = () => {
           teams.
         </p>
       </div>
-      <div className="container">
+      <div className="container-2">
         <ol>
           <li>
             <p className="number">01</p>
