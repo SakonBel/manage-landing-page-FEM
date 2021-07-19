@@ -3,9 +3,9 @@ import anisha from "../images/avatar-anisha.png";
 import richard from "../images/avatar-richard.png";
 import shanai from "../images/avatar-shanai.png";
 
-const Testimonial = () => {
+const Testimonial = ({ page, changePage }) => {
   return (
-    <section className="testimonial">
+    <section className={`testimonial ${page}`}>
       <h2>What they’ve said</h2>
       <div className="slider">
         <figure className="person">
@@ -54,10 +54,10 @@ const Testimonial = () => {
         </figure>
       </div>
       <div className="pagination">
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
+        <div className="item item-1" onClick={() => changePage(1)}></div>
+        <div className="item item-2" onClick={() => changePage(2)}></div>
+        <div className="item item-3" onClick={() => changePage(3)}></div>
+        <div className="item item-4" onClick={() => changePage(4)}></div>
       </div>
       <button className="get-started">Get Started</button>
     </section>

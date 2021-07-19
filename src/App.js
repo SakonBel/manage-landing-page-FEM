@@ -9,10 +9,32 @@ import Testimonial from "./components/Testimonial";
 function App() {
   const [active, setActive] = useState(false);
   const [show, setShow] = useState("");
+  const [page, setPage] = useState("page-1");
 
   const activateNav = () => {
     setActive(!active);
     !show ? setShow("show") : setShow("");
+  };
+
+  // const hideNavbar = () => {
+  //   const startPosition = 0;
+  // };
+
+  const changePage = (num) => {
+    switch (num) {
+      case 1:
+        setPage("page-1");
+        break;
+      case 2:
+        setPage("page-2");
+        break;
+      case 3:
+        setPage("page-3");
+        break;
+      default:
+        setPage("page-4");
+        break;
+    }
   };
 
   return (
@@ -21,7 +43,7 @@ function App() {
       <main>
         <Hero />
         <Features />
-        <Testimonial />
+        <Testimonial page={page} changePage={changePage} />
         <CTA />
       </main>
       <Footer />
