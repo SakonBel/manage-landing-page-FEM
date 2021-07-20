@@ -18,12 +18,12 @@ const Footer = () => {
             <li className="f-item">Home</li>
             <li className="f-item">Pricing</li>
             <li className="f-item">Products</li>
-            <li className="f-item">About Us</li>
+            <li className="f-item last">About Us</li>
           </ul>
           <ul className="link">
             <li className="f-item">Careers</li>
             <li className="f-item">Community</li>
-            <li className="f-item">Privacy Policy</li>
+            <li className="f-item last">Privacy Policy</li>
           </ul>
         </div>
         <div className="bottom-logo">

@@ -291,7 +291,7 @@ button {
 
 .testimonial[class~="page-2"] {
   .slider {
-    left: -100vw;
+    left: -100%;
   }
 
   .item-2 {
@@ -301,7 +301,7 @@ button {
 
 .testimonial[class~="page-3"] {
   .slider {
-    left: -200vw;
+    left: -200%;
   }
 
   .item-3 {
@@ -311,7 +311,7 @@ button {
 
 .testimonial[class~="page-4"] {
   .slider {
-    left: -300vw;
+    left: -300%;
   }
 
   .item-4 {
@@ -404,4 +404,7 @@ footer {
   }
 }
 
-@import "viewport";
+@import "tablet";
+@import "laptop";
+@import "notebook";
+@import "desktop";

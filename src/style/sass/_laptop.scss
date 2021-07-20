@@ -1,0 +1,97 @@
+// Laptop
+
+@media (min-width: 950px) {
+  .navbar {
+    width: 100%;
+    padding: 0 80px;
+
+    nav .main-nav {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  .hero {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 200px;
+
+    .container-1,
+    .container-2 {
+      background-image: none;
+      width: 50%;
+    }
+
+    .container-1 {
+      padding: 0;
+    }
+
+    .container-2 {
+      text-align: left;
+      button {
+        grid-column-start: 1;
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .features {
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+
+    .container-1,
+    .container-2 {
+      width: 40%;
+    }
+
+    .container-1 {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      justify-content: flex-start;
+
+      h2,
+      p {
+        padding-left: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  .testimonial {
+    padding-bottom: 100px;
+    .slider {
+      width: 240%;
+      .person {
+        width: 60%;
+
+        p {
+          margin: 0 auto;
+          width: 80%;
+        }
+      }
+    }
+
+    .pagination {
+      visibility: hidden;
+    }
+  }
+
+  .cta {
+    padding: 50px 100px;
+    h2 {
+      padding-bottom: 30px;
+    }
+  }
+
+  footer .footer {
+    .footer-link {
+      width: 40%;
+      justify-content: space-around;
+    }
+  }
+}

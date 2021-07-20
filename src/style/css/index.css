@@ -331,7 +331,7 @@ button {
 }
 
 .testimonial[class~="page-2"] .slider {
-  left: -100vw;
+  left: -100%;
 }
 
 .testimonial[class~="page-2"] .item-2 {
@@ -339,7 +339,7 @@ button {
 }
 
 .testimonial[class~="page-3"] .slider {
-  left: -200vw;
+  left: -200%;
 }
 
 .testimonial[class~="page-3"] .item-3 {
@@ -347,7 +347,7 @@ button {
 }
 
 .testimonial[class~="page-4"] .slider {
-  left: -300vw;
+  left: -300%;
 }
 
 .testimonial[class~="page-4"] .item-4 {
@@ -459,7 +459,151 @@ footer p {
   padding-bottom: 30px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 550px) {
+  .navbar {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .navbar nav {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbar nav .main-nav {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .navbar .logo img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .navbar .logo .hamburger {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  main {
+    display: unset;
+  }
+  .hero {
+    padding-left: 50px;
+  }
+  .hero .container-1,
+  .hero .container-2 {
+    padding-right: 50px;
+  }
+  .hero .container-2 {
+    background-size: 60%;
+    background-position: 430px -50px;
+  }
+  .hero .container-2 p {
+    padding: 30px 0;
+  }
+  .features {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 950px) {
+  .navbar {
+    width: 100%;
+    padding: 0 80px;
+  }
+  .navbar nav .main-nav {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .hero {
+    padding: 0 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 200px;
+  }
+  .hero .container-1,
+  .hero .container-2 {
+    background-image: none;
+    width: 50%;
+  }
+  .hero .container-1 {
+    padding: 0;
+  }
+  .hero .container-2 {
+    text-align: left;
+  }
+  .hero .container-2 button {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .features {
+    padding: 0 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 100px;
+  }
+  .features .container-1,
+  .features .container-2 {
+    width: 40%;
+  }
+  .features .container-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .features .container-1 h2,
+  .features .container-1 p {
+    padding-left: 0;
+    text-align: left;
+  }
+  .testimonial {
+    padding-bottom: 100px;
+  }
+  .testimonial .slider {
+    width: 240%;
+  }
+  .testimonial .slider .person {
+    width: 60%;
+  }
+  .testimonial .slider .person p {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .testimonial .pagination {
+    visibility: hidden;
+  }
+  .cta {
+    padding: 50px 100px;
+  }
+  .cta h2 {
+    padding-bottom: 30px;
+  }
+  footer .footer .footer-link {
+    width: 40%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1150px) {
   button {
     padding: 12px 30px;
   }
@@ -474,7 +618,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 160px;
+    padding: 0 100px;
     padding-top: 30px;
   }
   .navbar .logo {
@@ -497,7 +641,7 @@ footer p {
     display: none;
   }
   .navbar nav {
-    width: 50%;
+    width: 60%;
     position: unset;
     visibility: visible;
     -webkit-transform: translateX(0);
@@ -534,7 +678,13 @@ footer p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding: 0 160px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 100px;
     padding-top: 95px;
     background-image: url("../../images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
@@ -543,7 +693,7 @@ footer p {
   }
   .hero .container-1 {
     background: none;
-    width: 50%;
+    width: 40%;
   }
   .hero .container-1 img {
     padding-right: 0;
@@ -551,12 +701,12 @@ footer p {
   .hero .container-2 {
     display: unset;
     background-image: none;
-    width: 50%;
+    width: 60%;
     text-align: left;
   }
   .hero .container-2 h1 {
-    font-size: 3.5rem;
-    line-height: 1.15;
+    font-size: 3rem;
+    line-height: 1.05;
     padding: 0;
     padding-top: 175px;
     width: 90%;
@@ -575,7 +725,7 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 85px 160px;
+    padding: 85px 100px;
   }
   .features .container-1 {
     display: unset;
@@ -584,7 +734,7 @@ footer p {
   }
   .features .container-1 h2 {
     padding: 0;
-    font-size: 2.35rem;
+    font-size: 2.2rem;
     line-height: 1.15;
   }
   .features .container-1 p {
@@ -625,14 +775,14 @@ footer p {
   }
   .testimonial h2 {
     padding: 20px 0;
-    font-size: 2.5rem;
+    font-size: 2.35rem;
   }
   .testimonial .slider {
     width: 160%;
     margin-top: 20px;
   }
   .testimonial .slider .person {
-    width: 40vw;
+    width: 40%;
   }
   .testimonial .slider .person img {
     width: 73px;
@@ -660,9 +810,116 @@ footer p {
     padding: 60px 160px;
   }
   .cta h2 {
-    width: 40%;
+    width: 60%;
     margin: 0;
     text-align: left;
+  }
+  footer {
+    position: relative;
+    padding: 60px 100px;
+  }
+  footer .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer .footer form input {
+    margin: 0;
+    margin-right: 10px;
+  }
+  footer .footer .footer-link {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .footer .footer-link .last {
+    padding-bottom: 0;
+  }
+  footer .footer .bottom-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer .bottom-logo .social-link ul li {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    padding: 0 5px;
+    margin: 0;
+  }
+  footer .footer .bottom-logo .logo {
+    margin: 0 auto;
+    margin-left: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  footer p {
+    position: absolute;
+    padding-bottom: 0;
+    right: 100px;
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 0 160px;
+  }
+  .navbar nav {
+    width: 50%;
+  }
+  main {
+    display: unset;
+  }
+  .hero {
+    padding: 0 160px;
+    padding-top: 95px;
+  }
+  .hero .container-2 h1 {
+    font-size: 3.5rem;
+    line-height: 1.15;
+    padding-top: 175px;
+  }
+  .features {
+    padding: 85px 160px;
+  }
+  .features .container-1 h2 {
+    font-size: 2.35rem;
+  }
+  .testimonial h2 {
+    font-size: 2.5rem;
+  }
+  .cta {
+    padding: 60px 160px;
+  }
+  .cta h2 {
+    width: 40%;
+  }
+  footer {
+    padding: 60px 160px;
+  }
+  footer p {
+    right: 160px;
+    bottom: 60px;
   }
 }
 /*# sourceMappingURL=index.css.map */
