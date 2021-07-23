@@ -52,8 +52,9 @@ button {
   width: 100%;
   background: transparent;
   padding-right: 20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  padding-bottom: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar .logo {
@@ -136,6 +137,18 @@ button {
 
 .navbar button {
   display: none;
+}
+
+.navbar[class~="appear"] {
+  position: fixed;
+  background-color: #fafafa;
+}
+
+.navbar[class~="disappear"] {
+  position: fixed;
+  background-color: #fafafa;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 .hero {

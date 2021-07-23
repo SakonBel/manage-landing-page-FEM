@@ -2,7 +2,7 @@ import intro from "../images/illustration-intro.svg";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" onClick={(e) => console.log(e.target)}>
       <div className="container-1">
         <img src={intro} alt="" />
       </div>

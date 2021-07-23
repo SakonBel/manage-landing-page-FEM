@@ -2,9 +2,9 @@ import logo from "../images/logo.svg";
 import ham from "../images/icon-hamburger.svg";
 import close from "../images/icon-close.svg";
 
-const Navbar = ({ active, show, activateNav }) => {
+const Navbar = ({ active, show, appear, activateNav }) => {
   return (
-    <div className="navbar">
+    <div className={`navbar ${appear}`}>
       <div className="logo">
         <img src={logo} alt="" />
         <div className={`hamburger ${show}`} onClick={activateNav}>

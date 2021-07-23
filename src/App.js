@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CTA from "./components/CTA";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -6,19 +6,63 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
 
+const hero = document.querySelector(".hero");
+// const navbar = document.querySelector('.navbar');
+let scrollPosition = window.pageYOffset;
+let startPosition = scrollPosition;
+// let scroll;
+
 function App() {
   const [active, setActive] = useState(false);
   const [show, setShow] = useState("");
   const [page, setPage] = useState("page-1");
+  const [appear, setAppear] = useState("appear");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const activateNav = () => {
     setActive(!active);
     !show ? setShow("show") : setShow("");
   };
 
-  // const hideNavbar = () => {
-  //   const startPosition = 0;
+  // const hideEffect = () => {
+  //   navbar.style.transition = "0s";
+  //   showEffect();
   // };
+
+  // const showEffect = () => {
+  //   clearTimeout(scroll);
+  //   scroll = setTimeout(() => {
+  //     navbar.style.transition = "0.3s";
+  //   }, 200);
+  // };
+
+  function handleScroll() {
+    scrollPosition = window.pageYOffset;
+
+    if (scrollPosition < (hero && hero.clientHeight / 2)) {
+      if (appear !== "") {
+        setAppear("");
+      }
+    } else if (scrollPosition < startPosition) {
+      if (appear !== "appear") {
+        setAppear("appear");
+      }
+    } else {
+      if (appear !== "disappear") {
+        // hideEffect();
+        setAppear("disappear");
+      }
+    }
+
+    startPosition = scrollPosition;
+  }
 
   const changePage = (num) => {
     switch (num) {
@@ -39,7 +83,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar active={active} show={show} activateNav={activateNav} />
+      <Navbar
+        active={active}
+        show={show}
+        appear={appear}
+        activateNav={activateNav}
+      />
       <main>
         <Hero />
         <Features />
