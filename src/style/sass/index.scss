@@ -121,7 +121,7 @@ button {
 .navbar[class~="appear"] {
   position: fixed;
   background-color: $very-light-gray;
-  // transition: 0.3s;
+  transition: 0.3s;
   // border-bottom: solid 1px $bright-red;
 }
 
@@ -129,7 +129,7 @@ button {
   position: fixed;
   background-color: $very-light-gray;
   transform: translateY(-200px);
-  // transition: 0.3s;
+  transition: 0.3s;
   // border-bottom: solid 1px $bright-red;
 }
 

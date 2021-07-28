@@ -6,11 +6,9 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
 
-const hero = document.querySelector(".hero");
-// const navbar = document.querySelector('.navbar');
 let scrollPosition = window.pageYOffset;
 let startPosition = scrollPosition;
-// let scroll;
+let navbarTimeout;
 
 function App() {
   const [active, setActive] = useState(false);
@@ -24,39 +22,42 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   const activateNav = () => {
     setActive(!active);
-    !show ? setShow("show") : setShow("");
+    if (!show) {
+      clearTimeout(navbarTimeout);
+      setShow("show");
+    } else {
+      autoHideNavbar();
+      setShow("");
+    }
   };
 
-  // const hideEffect = () => {
-  //   navbar.style.transition = "0s";
-  //   showEffect();
-  // };
-
-  // const showEffect = () => {
-  //   clearTimeout(scroll);
-  //   scroll = setTimeout(() => {
-  //     navbar.style.transition = "0.3s";
-  //   }, 200);
-  // };
+  function autoHideNavbar() {
+    clearTimeout(navbarTimeout);
+    navbarTimeout = setTimeout(() => {
+      setAppear("disappear");
+    }, 3000);
+  }
 
   function handleScroll() {
     scrollPosition = window.pageYOffset;
+    console.log(window.pageYOffset);
 
-    if (scrollPosition < (hero && hero.clientHeight / 2)) {
-      if (appear !== "") {
-        setAppear("");
-      }
-    } else if (scrollPosition < startPosition) {
+    if (window.pageYOffset < 10) {
+      clearTimeout(navbarTimeout);
+    } else {
+      autoHideNavbar();
+    }
+
+    if (scrollPosition < startPosition) {
       if (appear !== "appear") {
         setAppear("appear");
       }
     } else {
       if (appear !== "disappear") {
-        // hideEffect();
         setAppear("disappear");
       }
     }
