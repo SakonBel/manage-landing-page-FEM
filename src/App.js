@@ -9,6 +9,7 @@ import Testimonial from "./components/Testimonial";
 let scrollPosition = window.pageYOffset;
 let startPosition = scrollPosition;
 let navbarTimeout;
+let mobileSideScroll;
 
 function App() {
   const [active, setActive] = useState(false);
@@ -44,7 +45,6 @@ function App() {
 
   function handleScroll() {
     scrollPosition = window.pageYOffset;
-    console.log(window.pageYOffset);
 
     if (window.pageYOffset < 10) {
       clearTimeout(navbarTimeout);
@@ -81,6 +81,30 @@ function App() {
         break;
     }
   };
+
+  const mobileAutoCarousel = () => {
+    clearInterval(mobileSideScroll);
+    mobileSideScroll = setInterval(() => {
+      switch (page) {
+        case "page-1":
+          setPage("page-2");
+          break;
+        case "page-2":
+          setPage("page-3");
+          break;
+        case "page-3":
+          setPage("page-4");
+          break;
+        default:
+          setPage("page-1");
+          break;
+      }
+    }, 4000);
+  };
+
+  if (window.innerWidth <= 950) {
+    mobileAutoCarousel();
+  }
 
   return (
     <div className="App">
