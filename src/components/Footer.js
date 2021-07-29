@@ -9,7 +9,12 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer">
-        <form className="subscribe">
+        <form
+          className="subscribe"
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
           <input type="email" placeholder="Updates in your inbox…" />
           <button className="submit">Go</button>
         </form>

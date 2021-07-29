@@ -17,20 +17,6 @@ function App() {
   const [page, setPage] = useState("page-1");
   const [appear, setAppear] = useState("appear");
 
-  // const person_1 = document && document.querySelector(".person-1");
-  // const person_2 = document && document.querySelector(".person-2");
-  // const person_3 = document && document.querySelector(".person-3");
-  // const person_4 = document && document.querySelector(".person-4");
-  // const clone_1 = person_1 && person_1.cloneNode(true);
-  // const clone_2 = person_1 && person_2.cloneNode(true);
-  // const clone_3 = person_1 && person_3.cloneNode(true);
-  // const clone_4 = person_1 && person_4.cloneNode(true);
-
-  // const sliderRef = useRef();
-
-  // let slider = sliderRef.current;
-  // let clone = slider && slider.cloneNode(true);
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -64,6 +50,9 @@ function App() {
     if (!show) {
       clearTimeout(navbarTimeout);
       setShow("show");
+    } else if (window.pageYOffset < 10) {
+      clearTimeout(navbarTimeout);
+      setShow("");
     } else {
       autoHideNavbar();
       setShow("");
@@ -80,7 +69,7 @@ function App() {
   function handleScroll() {
     scrollPosition = window.pageYOffset;
 
-    if (window.pageYOffset < 10) {
+    if (window.pageYOffset < 10 || show) {
       clearTimeout(navbarTimeout);
     } else {
       autoHideNavbar();
@@ -91,7 +80,7 @@ function App() {
         setAppear("appear");
       }
     } else {
-      if (appear !== "disappear") {
+      if (appear !== "disappear" && !show) {
         setAppear("disappear");
       }
     }
@@ -114,13 +103,6 @@ function App() {
         setPage("page-4");
         break;
     }
-  };
-
-  const desktopAutoCarousel = () => {
-    // clone_1 && person_4.after(clone_1);
-    // clone_2 && clone_1.after(clone_2);
-    // clone_3 && clone_2.after(clone_3);
-    // clone_4 && clone_3.after(clone_4);
   };
 
   return (

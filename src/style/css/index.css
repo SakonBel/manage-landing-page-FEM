@@ -595,6 +595,8 @@ footer p {
   }
   .testimonial .slider {
     width: 240%;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .testimonial .slider .person {
     width: 60%;
@@ -605,6 +607,18 @@ footer p {
   }
   .testimonial .pagination {
     visibility: hidden;
+  }
+  .testimonial[class~="page-1"] .slider {
+    left: 20%;
+  }
+  .testimonial[class~="page-2"] .slider {
+    left: -40%;
+  }
+  .testimonial[class~="page-3"] .slider {
+    left: -100%;
+  }
+  .testimonial[class~="page-4"] .slider {
+    left: -160%;
   }
   .cta {
     padding: 50px 100px;
@@ -812,6 +826,18 @@ footer p {
   .testimonial .pagination {
     margin-top: 300px;
     visibility: hidden;
+  }
+  .testimonial[class~="page-1"] .slider {
+    left: 30%;
+  }
+  .testimonial[class~="page-2"] .slider {
+    left: -10%;
+  }
+  .testimonial[class~="page-3"] .slider {
+    left: -50%;
+  }
+  .testimonial[class~="page-4"] .slider {
+    left: -90%;
   }
   .cta {
     display: -webkit-box;

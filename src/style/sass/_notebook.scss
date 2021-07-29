@@ -190,6 +190,30 @@
     }
   }
 
+  .testimonial[class~="page-1"] {
+    .slider {
+      left: 30%;
+    }
+  }
+
+  .testimonial[class~="page-2"] {
+    .slider {
+      left: -10%;
+    }
+  }
+
+  .testimonial[class~="page-3"] {
+    .slider {
+      left: -50%;
+    }
+  }
+
+  .testimonial[class~="page-4"] {
+    .slider {
+      left: -90%;
+    }
+  }
+
   .cta {
     display: flex;
     justify-content: space-between;

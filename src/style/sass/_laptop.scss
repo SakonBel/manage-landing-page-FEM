@@ -66,6 +66,7 @@
     padding-bottom: 100px;
     .slider {
       width: 240%;
+      transition: 1s;
       .person {
         width: 60%;
 
@@ -78,6 +79,30 @@
 
     .pagination {
       visibility: hidden;
+    }
+  }
+
+  .testimonial[class~="page-1"] {
+    .slider {
+      left: 20%;
+    }
+  }
+
+  .testimonial[class~="page-2"] {
+    .slider {
+      left: -40%;
+    }
+  }
+
+  .testimonial[class~="page-3"] {
+    .slider {
+      left: -100%;
+    }
+  }
+
+  .testimonial[class~="page-4"] {
+    .slider {
+      left: -160%;
     }
   }
 
