@@ -8,7 +8,7 @@ const Testimonial = ({ page, changePage }) => {
     <section className={`testimonial ${page}`}>
       <h2>What they’ve said</h2>
       <div className="slider">
-        <figure className="person">
+        <figure className="person person-1">
           <img src={anisha} alt="Anisha portrait" />
           <figcaption>Anisha Li</figcaption>
           <blockquote>
@@ -19,7 +19,7 @@ const Testimonial = ({ page, changePage }) => {
             </p>
           </blockquote>
         </figure>
-        <figure className="person">
+        <figure className="person person-2">
           <img src={ali} alt="Ali portrait" />
           <figcaption>Ali Bravo</figcaption>
           <blockquote>
@@ -30,7 +30,7 @@ const Testimonial = ({ page, changePage }) => {
             </p>
           </blockquote>
         </figure>
-        <figure className="person">
+        <figure className="person person-3">
           <img src={richard} alt="Richard portrait" />
           <figcaption>Richard Watts</figcaption>
           <blockquote>
@@ -41,7 +41,7 @@ const Testimonial = ({ page, changePage }) => {
             </p>
           </blockquote>
         </figure>
-        <figure className="person">
+        <figure className="person person-4">
           <img src={shanai} alt="Shanai portrait" />
           <figcaption>Shanai Gough</figcaption>
           <blockquote>
