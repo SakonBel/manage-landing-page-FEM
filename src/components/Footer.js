@@ -1,8 +1,8 @@
-import facebook from "../images/icon-facebook.svg";
-import youtube from "../images/icon-youtube.svg";
-import twitter from "../images/icon-twitter.svg";
-import pinterest from "../images/icon-pinterest.svg";
-import instagram from "../images/icon-instagram.svg";
+import { ReactComponent as Facebook } from "../images/icon-facebook.svg";
+import { ReactComponent as Youtube } from "../images/icon-youtube.svg";
+import { ReactComponent as Twitter } from "../images/icon-twitter.svg";
+import { ReactComponent as Pinterest } from "../images/icon-pinterest.svg";
+import { ReactComponent as Instagram } from "../images/icon-instagram.svg";
 import logo from "../images/logo-white.svg";
 
 const Footer = () => {
@@ -14,6 +14,7 @@ const Footer = () => {
           onSubmit={(e) => {
             e.preventDefault();
           }}
+          // noValidate
         >
           <input type="email" placeholder="Updates in your inbox…" />
           <button className="submit">Go</button>
@@ -35,19 +36,19 @@ const Footer = () => {
           <div className="social-link">
             <ul>
               <li>
-                <img src={facebook} alt="Facebook link" />
+                <Facebook fill="white" className="logo-link" />
               </li>
               <li>
-                <img src={youtube} alt="youtube link" />
+                <Youtube fill="white" className="logo-link" />
               </li>
               <li>
-                <img src={twitter} alt="twitter link" />
+                <Twitter fill="white" className="logo-link" />
               </li>
               <li>
-                <img src={pinterest} alt="pinterest link" />
+                <Pinterest fill="white" className="logo-link" />
               </li>
               <li>
-                <img src={instagram} alt="instagram link" />
+                <Instagram fill="white" className="logo-link" />
               </li>
             </ul>
           </div>

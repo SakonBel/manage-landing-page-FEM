@@ -11,7 +11,7 @@
 }
 
 body {
-  // overflow-x: hidden;
+  overflow-x: hidden;
   font-size: $mid;
 }
 
@@ -44,6 +44,10 @@ button {
   border-radius: 35px;
   padding: 11px 30px;
   cursor: pointer;
+
+  &:hover {
+    filter: brightness(150%);
+  }
 }
 
 .navbar {
@@ -387,6 +391,10 @@ footer {
         font-size: 15px;
         padding-bottom: 15px;
         cursor: pointer;
+
+        &:hover {
+          color: $bright-red;
+        }
       }
     }
 
@@ -403,6 +411,10 @@ footer {
           padding: 20px;
           margin: 20px 0;
           cursor: pointer;
+
+          .logo-link:hover {
+            fill: $bright-red;
+          }
         }
       }
       .logo {

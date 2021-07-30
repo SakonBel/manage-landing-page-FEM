@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-size: 16px;
 }
 
@@ -43,6 +44,11 @@ button {
   border-radius: 35px;
   padding: 11px 30px;
   cursor: pointer;
+}
+
+button:hover {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
 }
 
 .navbar {
@@ -435,6 +441,10 @@ footer .footer .footer-link .f-item {
   cursor: pointer;
 }
 
+footer .footer .footer-link .f-item:hover {
+  color: #f25f3a;
+}
+
 footer .footer .bottom-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,6 +470,10 @@ footer .footer .bottom-logo .social-link ul li {
   padding: 20px;
   margin: 20px 0;
   cursor: pointer;
+}
+
+footer .footer .bottom-logo .social-link ul li .logo-link:hover {
+  fill: #f25f3a;
 }
 
 footer .footer .bottom-logo .logo {
