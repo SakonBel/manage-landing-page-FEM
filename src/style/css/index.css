@@ -522,6 +522,22 @@ footer p {
 }
 
 @media (min-width: 950px) {
+  @-webkit-keyframes slideshow {
+    from {
+      left: 170vw;
+    }
+    to {
+      left: -70vw;
+    }
+  }
+  @keyframes slideshow {
+    from {
+      left: 170vw;
+    }
+    to {
+      left: -70vw;
+    }
+  }
   .navbar {
     width: 100%;
     padding: 0 80px;
@@ -599,26 +615,57 @@ footer p {
     transition: 1s;
   }
   .testimonial .slider .person {
-    width: 60%;
+    position: absolute;
+    width: 60vw;
+    -webkit-animation-name: slideshow;
+            animation-name: slideshow;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   .testimonial .slider .person p {
     margin: 0 auto;
     width: 80%;
   }
+  .testimonial .slider .person-1 {
+    top: 0;
+    left: 0;
+    -webkit-animation-delay: -22.5s;
+            animation-delay: -22.5s;
+  }
+  .testimonial .slider .person-2 {
+    top: 0;
+    left: 60vw;
+    -webkit-animation-delay: -15s;
+            animation-delay: -15s;
+  }
+  .testimonial .slider .person-3 {
+    top: 0;
+    left: 120vw;
+    -webkit-animation-delay: -7.5s;
+            animation-delay: -7.5s;
+  }
+  .testimonial .slider .person-4 {
+    top: 0;
+    left: 180vw;
+  }
   .testimonial .pagination {
     visibility: hidden;
   }
   .testimonial[class~="page-1"] .slider {
-    left: 20%;
+    left: 0;
   }
   .testimonial[class~="page-2"] .slider {
-    left: -40%;
+    left: 0;
   }
   .testimonial[class~="page-3"] .slider {
-    left: -100%;
+    left: 0;
   }
   .testimonial[class~="page-4"] .slider {
-    left: -160%;
+    left: 0;
   }
   .cta {
     padding: 50px 100px;
@@ -634,6 +681,22 @@ footer p {
 }
 
 @media (min-width: 1150px) {
+  @-webkit-keyframes slideshow {
+    from {
+      left: 130vw;
+    }
+    to {
+      left: -30vw;
+    }
+  }
+  @keyframes slideshow {
+    from {
+      left: 130vw;
+    }
+    to {
+      left: -30vw;
+    }
+  }
   button {
     padding: 12px 30px;
   }
@@ -812,7 +875,9 @@ footer p {
     margin-top: 20px;
   }
   .testimonial .slider .person {
-    width: 40%;
+    width: 40vw;
+    -webkit-animation-duration: 40s;
+            animation-duration: 40s;
   }
   .testimonial .slider .person img {
     width: 73px;
@@ -823,21 +888,33 @@ footer p {
     margin: 0 auto;
     padding: 20px 30px;
   }
+  .testimonial .slider .person-1 {
+    top: 0;
+    left: 0;
+    -webkit-animation-delay: -35s;
+            animation-delay: -35s;
+  }
+  .testimonial .slider .person-2 {
+    top: 0;
+    left: 40vw;
+    -webkit-animation-delay: -25s;
+            animation-delay: -25s;
+  }
+  .testimonial .slider .person-3 {
+    top: 0;
+    left: 80vw;
+    -webkit-animation-delay: -15s;
+            animation-delay: -15s;
+  }
+  .testimonial .slider .person-4 {
+    top: 0;
+    left: 120vw;
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+  }
   .testimonial .pagination {
     margin-top: 300px;
     visibility: hidden;
-  }
-  .testimonial[class~="page-1"] .slider {
-    left: 30%;
-  }
-  .testimonial[class~="page-2"] .slider {
-    left: -10%;
-  }
-  .testimonial[class~="page-3"] .slider {
-    left: -50%;
-  }
-  .testimonial[class~="page-4"] .slider {
-    left: -90%;
   }
   .cta {
     display: -webkit-box;

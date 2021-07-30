@@ -1,6 +1,15 @@
 // Notebook
 
 @media (min-width: 1150px) {
+  @keyframes slideshow {
+    from {
+      left: 130vw;
+    }
+    to {
+      left: -30vw;
+    }
+  }
+
   button {
     padding: 12px 30px;
   }
@@ -170,7 +179,8 @@
       margin-top: 20px;
 
       .person {
-        width: 40%;
+        width: 40vw;
+        animation-duration: 40s;
         img {
           width: 73px;
         }
@@ -182,35 +192,33 @@
           padding: 20px 30px;
         }
       }
+
+      .person-1 {
+        top: 0;
+        left: 0;
+        animation-delay: -35s;
+      }
+
+      .person-2 {
+        top: 0;
+        left: 40vw;
+        animation-delay: -25s;
+      }
+      .person-3 {
+        top: 0;
+        left: 80vw;
+        animation-delay: -15s;
+      }
+      .person-4 {
+        top: 0;
+        left: 120vw;
+        animation-delay: -5s;
+      }
     }
 
     .pagination {
       margin-top: 300px;
       visibility: hidden;
-    }
-  }
-
-  .testimonial[class~="page-1"] {
-    .slider {
-      left: 30%;
-    }
-  }
-
-  .testimonial[class~="page-2"] {
-    .slider {
-      left: -10%;
-    }
-  }
-
-  .testimonial[class~="page-3"] {
-    .slider {
-      left: -50%;
-    }
-  }
-
-  .testimonial[class~="page-4"] {
-    .slider {
-      left: -90%;
     }
   }
 

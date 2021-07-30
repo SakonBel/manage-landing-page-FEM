@@ -1,6 +1,15 @@
 // Laptop
 
 @media (min-width: 950px) {
+  @keyframes slideshow {
+    from {
+      left: 170vw;
+    }
+    to {
+      left: -70vw;
+    }
+  }
+
   .navbar {
     width: 100%;
     padding: 0 80px;
@@ -68,12 +77,38 @@
       width: 240%;
       transition: 1s;
       .person {
-        width: 60%;
+        position: absolute;
+        width: 60vw;
+        animation-name: slideshow;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
 
         p {
           margin: 0 auto;
           width: 80%;
         }
+      }
+
+      .person-1 {
+        top: 0;
+        left: 0;
+        animation-delay: -22.5s;
+      }
+
+      .person-2 {
+        top: 0;
+        left: 60vw;
+        animation-delay: -15s;
+      }
+      .person-3 {
+        top: 0;
+        left: 120vw;
+        animation-delay: -7.5s;
+      }
+      .person-4 {
+        top: 0;
+        left: 180vw;
       }
     }
 
@@ -84,25 +119,25 @@
 
   .testimonial[class~="page-1"] {
     .slider {
-      left: 20%;
+      left: 0;
     }
   }
 
   .testimonial[class~="page-2"] {
     .slider {
-      left: -40%;
+      left: 0;
     }
   }
 
   .testimonial[class~="page-3"] {
     .slider {
-      left: -100%;
+      left: 0;
     }
   }
 
   .testimonial[class~="page-4"] {
     .slider {
-      left: -160%;
+      left: 0;
     }
   }
 
