@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/manage-landing-page-FEM/static/css/main.ac9e93ca.chunk.css",
-    "main.js": "/manage-landing-page-FEM/static/js/main.f9c28698.chunk.js",
-    "main.js.map": "/manage-landing-page-FEM/static/js/main.f9c28698.chunk.js.map",
+    "main.js": "/manage-landing-page-FEM/static/js/main.e5beb0e6.chunk.js",
+    "main.js.map": "/manage-landing-page-FEM/static/js/main.e5beb0e6.chunk.js.map",
     "runtime-main.js": "/manage-landing-page-FEM/static/js/runtime-main.07ed101f.js",
     "runtime-main.js.map": "/manage-landing-page-FEM/static/js/runtime-main.07ed101f.js.map",
     "static/js/2.cc52d4fc.chunk.js": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.07ed101f.js",
     "static/js/2.cc52d4fc.chunk.js",
     "static/css/main.ac9e93ca.chunk.css",
-    "static/js/main.f9c28698.chunk.js"
+    "static/js/main.e5beb0e6.chunk.js"
   ]
 }
