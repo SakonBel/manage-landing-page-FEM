@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/SakonBel/manage-landing-page-FEM]
-- Live Site URL: [https://sakonbel.github.io/manage-landing-page-FEM]
+- Solution URL: [https://github.com/SakonBel/Todo-app--FEM]
+- Live Site URL: [https://sakonbel.github.io/Todo-app--FEM/]
 
 ## My process
 
@@ -95,6 +95,5 @@ This landing page is kind of past-time project for me, yet it show me a lot of s
 ## Author
 
 Made by Sakon Plangklang
-
 - Frontend Mentor - [@SakonSabel](https://www.frontendmentor.io/profile/SakonSabel)
 - Twitter - [@WhitePhantoms](https://twitter.com/WhitePhantoms)
