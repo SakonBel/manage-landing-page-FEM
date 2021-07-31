@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Frontend Mentor - Manage landing page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### The challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See all testimonials in a horizontal slider
+- Receive an error message when the newsletter sign up `form` is submitted if:
+  - The `input` field is empty
+  - The email address is not formatted correctly
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![./Desktop-Sunnyside-Agency.png]
+![./Mobile-Sunnyside-Agency.png]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [https://github.com/SakonBel/manage-landing-page-FEM]
+- Live Site URL: [https://sakonbel.github.io/manage-landing-page-FEM]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- grid
+- SASS
+- JavaScript
+- Regular Expression
+- React
+- Mobile-first workflow
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### CSS
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project is the first time that I learn to use the animation for real. Combining with the ability to transition the element, this give me the power to manipulate the DOM in the way that I want and it still quite beautiful. I also learn to change the properties of background image to fit the description. I implement some grid to the landing page too, although it is quite terrible use for the website like this and that make me learned that some tools are best for only some situation. I have to use the right tools for the right job. but overall I learned a lot of CSS here and have a lot of fun playing with it.
 
-## Learn More
+#### JavaScript
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I don't learn anything much about JavaScript in this project, maybe because there are quite many things that I knew already. Anyway I use a lot of switch statement here and that make me familiarize with it and may prefer using it in some case in the future for if/else statement alternative.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### React
 
-### Code Splitting
+With this landing page, I learned a lot about React. I use UseEffect for the first time and I kind of actually like how it work. Also this give me a lot of knowledge about their dependency. But the thing that I think is help me the most in this project is the knowledge of how the rendering and re-rendering work. I need to keep in mind from now on about rendering in React in the future. Also I have a chance to try out most of React hooks in this project. Even I didn't use many of it to complete the project I now plan to use it more in my next project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Regular Expression
 
-### Analyzing the Bundle Size
+This is the first time I use RegEx to validate form in the project. At first it quite intimidating, but after I've learned the basic of RegEx, it not that hard at all. I will sure love to work with it again anytime I have an input with the needed of validation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Continued development
 
-### Making a Progressive Web App
+This landing page is kind of past-time project for me, yet it show me a lot of stuffs and make me learn of many kind of things. And that give me the need to learn more and dig deep in some area that I find it useful and not quite understand it completely yet. Here the list of what I want to learn next.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React hooks
+- CSS animation
+- JavaScript object
+- Async JavaScript
+- React lifecycle
+- HTML forms
 
-### Advanced Configuration
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Freecodecamp youtube channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) - This community and youtube channel is the best at finding and learning topics that really valuable to your dev career. The site offer many kinds of video and all are best quality. And you know what is the best. It's FREE!!
 
-### Deployment
+- [CSS-tricks.com](https://css-tricks.com) - This site has many CSS tips and tricks that can help you understand how to get around and do things that many site have a hard time giving the right answer about CSS. You may find some idea here that you can use in your future projects.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Web Dev Simplify youtube channel](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) I heavily use this site for the React tutorial. This site give me many more explaination on how to use many hooks in many kind of situations. I plan to learn more from this channel's project-base in the future.
 
-### `npm run build` fails to minify
+- [Stack overflow](https://stackoverflow.com) - As always a good site for finding many kind of answers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+Made by Sakon Plangklang
+
+- Frontend Mentor - [@SakonSabel](https://www.frontendmentor.io/profile/SakonSabel)
+- Twitter - [@WhitePhantoms](https://twitter.com/WhitePhantoms)

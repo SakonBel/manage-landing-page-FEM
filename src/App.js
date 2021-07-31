@@ -27,8 +27,8 @@ function App() {
   });
 
   useEffect(() => {
-    clearInterval(mobileSideScroll);
-    mobileSideScroll = setInterval(() => {
+    clearTimeout(mobileSideScroll);
+    mobileSideScroll = setTimeout(() => {
       switch (page) {
         case "page-1":
           setPage("page-2");
@@ -90,6 +90,7 @@ function App() {
   }
 
   const changePage = (num) => {
+    clearTimeout(mobileSideScroll);
     switch (num) {
       case 1:
         setPage("page-1");
