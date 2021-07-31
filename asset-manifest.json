@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/manage-landing-page-FEM/static/css/main.ac9e93ca.chunk.css",
+    "main.js": "/manage-landing-page-FEM/static/js/main.f9c28698.chunk.js",
+    "main.js.map": "/manage-landing-page-FEM/static/js/main.f9c28698.chunk.js.map",
+    "runtime-main.js": "/manage-landing-page-FEM/static/js/runtime-main.07ed101f.js",
+    "runtime-main.js.map": "/manage-landing-page-FEM/static/js/runtime-main.07ed101f.js.map",
+    "static/js/2.cc52d4fc.chunk.js": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js",
+    "static/js/2.cc52d4fc.chunk.js.map": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js.map",
+    "index.html": "/manage-landing-page-FEM/index.html",
+    "static/css/main.ac9e93ca.chunk.css.map": "/manage-landing-page-FEM/static/css/main.ac9e93ca.chunk.css.map",
+    "static/js/2.cc52d4fc.chunk.js.LICENSE.txt": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js.LICENSE.txt",
+    "static/media/avatar-ali.88f9155c.png": "/manage-landing-page-FEM/static/media/avatar-ali.88f9155c.png",
+    "static/media/avatar-anisha.484e15bc.png": "/manage-landing-page-FEM/static/media/avatar-anisha.484e15bc.png",
+    "static/media/avatar-richard.ace8e089.png": "/manage-landing-page-FEM/static/media/avatar-richard.ace8e089.png",
+    "static/media/avatar-shanai.4bbe2f95.png": "/manage-landing-page-FEM/static/media/avatar-shanai.4bbe2f95.png",
+    "static/media/index.css": "/manage-landing-page-FEM/static/media/bg-tablet-pattern.b6990a98.svg",
+    "static/media/icon-close.d5ba0dc5.svg": "/manage-landing-page-FEM/static/media/icon-close.d5ba0dc5.svg",
+    "static/media/icon-facebook.8a93397a.svg": "/manage-landing-page-FEM/static/media/icon-facebook.8a93397a.svg",
+    "static/media/icon-hamburger.8dcf47cc.svg": "/manage-landing-page-FEM/static/media/icon-hamburger.8dcf47cc.svg",
+    "static/media/icon-instagram.ff65622e.svg": "/manage-landing-page-FEM/static/media/icon-instagram.ff65622e.svg",
+    "static/media/icon-pinterest.6917dde3.svg": "/manage-landing-page-FEM/static/media/icon-pinterest.6917dde3.svg",
+    "static/media/icon-twitter.2f035924.svg": "/manage-landing-page-FEM/static/media/icon-twitter.2f035924.svg",
+    "static/media/icon-youtube.d2a7ca60.svg": "/manage-landing-page-FEM/static/media/icon-youtube.d2a7ca60.svg",
+    "static/media/illustration-intro.cb9a8a95.svg": "/manage-landing-page-FEM/static/media/illustration-intro.cb9a8a95.svg",
+    "static/media/logo-white.e00f9b32.svg": "/manage-landing-page-FEM/static/media/logo-white.e00f9b32.svg",
+    "static/media/logo.66a57610.svg": "/manage-landing-page-FEM/static/media/logo.66a57610.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07ed101f.js",
+    "static/js/2.cc52d4fc.chunk.js",
+    "static/css/main.ac9e93ca.chunk.css",
+    "static/js/main.f9c28698.chunk.js"
+  ]
+}
