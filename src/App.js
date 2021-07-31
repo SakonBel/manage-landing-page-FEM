@@ -16,7 +16,7 @@ function App() {
   const [active, setActive] = useState(false);
   const [show, setShow] = useState("");
   const [page, setPage] = useState("page-1");
-  const [appear, setAppear] = useState("appear");
+  const [appear, setAppear] = useState("origin");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -79,9 +79,12 @@ function App() {
         setAppear("disappear");
       }
     }
-    if (window.pageYOffset < 10 || show) {
+    if (window.pageYOffset < 10) {
       clearTimeout(navbarTimeout);
       setAppear("origin");
+    } else if (show) {
+      clearTimeout(navbarTimeout);
+      setAppear("appear");
     } else {
       autoHideNavbar();
     }
