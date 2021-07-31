@@ -10,6 +10,7 @@ let scrollPosition = window.pageYOffset;
 let startPosition = scrollPosition;
 let navbarTimeout;
 let mobileSideScroll;
+const email = /^([-\w]+)@([a-z\d_-]+)\.([a-z]{2,6})(\.[a-z]{2,6})?$/;
 
 function App() {
   const [active, setActive] = useState(false);
@@ -69,12 +70,6 @@ function App() {
   function handleScroll() {
     scrollPosition = window.pageYOffset;
 
-    if (window.pageYOffset < 10 || show) {
-      clearTimeout(navbarTimeout);
-    } else {
-      autoHideNavbar();
-    }
-
     if (scrollPosition < startPosition) {
       if (appear !== "appear") {
         setAppear("appear");
@@ -83,6 +78,12 @@ function App() {
       if (appear !== "disappear" && !show) {
         setAppear("disappear");
       }
+    }
+    if (window.pageYOffset < 10 || show) {
+      clearTimeout(navbarTimeout);
+      setAppear("origin");
+    } else {
+      autoHideNavbar();
     }
 
     startPosition = scrollPosition;
@@ -119,7 +120,7 @@ function App() {
         <Testimonial page={page} changePage={changePage} />
         <CTA />
       </main>
-      <Footer />
+      <Footer email={email} />
     </div>
   );
 }

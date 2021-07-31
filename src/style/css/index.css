@@ -129,6 +129,10 @@ button:hover {
   cursor: pointer;
 }
 
+.navbar nav .main-nav li:hover {
+  color: #9095a7;
+}
+
 .navbar nav[class~="show"] {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -147,6 +151,13 @@ button:hover {
 .navbar[class~="appear"] {
   position: fixed;
   background-color: #fafafa;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar[class~="origin"] {
+  position: fixed;
+  background-color: transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -416,12 +427,36 @@ footer .footer {
           align-items: center;
 }
 
+footer .footer form {
+  position: relative;
+}
+
 footer .footer form input {
   padding: 12.5px 30px;
   border: none;
   border-radius: 50px;
   margin: 50px 0;
   margin-right: 10px;
+}
+
+footer .footer form p {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  color: white;
+  text-align: left;
+}
+
+footer .footer form .valid {
+  color: lime;
+}
+
+footer .footer form .invalid {
+  color: orange;
+}
+
+footer .footer form .error {
+  color: red;
 }
 
 footer .footer .footer-link {
@@ -976,6 +1011,10 @@ footer p {
   footer .footer form input {
     margin: 0;
     margin-right: 10px;
+  }
+  footer .footer form p {
+    bottom: -30px;
+    width: 80%;
   }
   footer .footer .footer-link {
     -ms-flex-pack: distribute;

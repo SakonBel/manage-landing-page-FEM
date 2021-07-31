@@ -104,6 +104,10 @@ button {
       li {
         padding: 10px;
         cursor: pointer;
+
+        &:hover {
+          color: $dark-grayish-blue;
+        }
       }
     }
   }
@@ -126,7 +130,12 @@ button {
   position: fixed;
   background-color: $very-light-gray;
   transition: 0.3s;
-  // border-bottom: solid 1px $bright-red;
+}
+
+.navbar[class~="origin"] {
+  position: fixed;
+  background-color: transparent;
+  transition: 0.3s;
 }
 
 .navbar[class~="disappear"] {
@@ -134,7 +143,6 @@ button {
   background-color: $very-light-gray;
   transform: translateY(-200px);
   transition: 0.3s;
-  // border-bottom: solid 1px $bright-red;
 }
 
 .hero {
@@ -372,12 +380,29 @@ footer {
     align-items: center;
 
     form {
+      position: relative;
       input {
         padding: 12.5px 30px;
         border: none;
         border-radius: 50px;
         margin: 50px 0;
         margin-right: 10px;
+      }
+      p {
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        color: white;
+        text-align: left;
+      }
+      .valid {
+        color: lime;
+      }
+      .invalid {
+        color: orange;
+      }
+      .error {
+        color: red;
       }
     }
 
