@@ -31,10 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
+![Desktop-preview](https://user-images.githubusercontent.com/63510603/128380043-e0086979-02f1-4475-820a-cadc11ba3cfa.png)
+![Mobile-preview](https://user-images.githubusercontent.com/63510603/128380056-27e68015-045a-479c-a0d9-50269511b944.png)
+
 ### Links
 
-- Solution URL: [https://github.com/SakonBel/Todo-app--FEM]
-- Live Site URL: [https://sakonbel.github.io/Todo-app--FEM/]
+- Solution URL: [https://github.com/SakonBel/manage-landing-page-FEM]
+- Live Site URL: [https://sakonbel.github.io/manage-landing-page-FEM/]
 
 ## My process
 
