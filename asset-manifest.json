@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/manage-landing-page-FEM/static/css/main.8229d983.chunk.css",
+    "main.css": "/manage-landing-page-FEM/static/css/main.9465cdb8.chunk.css",
     "main.js": "/manage-landing-page-FEM/static/js/main.e5beb0e6.chunk.js",
     "main.js.map": "/manage-landing-page-FEM/static/js/main.e5beb0e6.chunk.js.map",
     "runtime-main.js": "/manage-landing-page-FEM/static/js/runtime-main.07ed101f.js",
@@ -8,7 +8,7 @@
     "static/js/2.cc52d4fc.chunk.js": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js",
     "static/js/2.cc52d4fc.chunk.js.map": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js.map",
     "index.html": "/manage-landing-page-FEM/index.html",
-    "static/css/main.8229d983.chunk.css.map": "/manage-landing-page-FEM/static/css/main.8229d983.chunk.css.map",
+    "static/css/main.9465cdb8.chunk.css.map": "/manage-landing-page-FEM/static/css/main.9465cdb8.chunk.css.map",
     "static/js/2.cc52d4fc.chunk.js.LICENSE.txt": "/manage-landing-page-FEM/static/js/2.cc52d4fc.chunk.js.LICENSE.txt",
     "static/media/avatar-ali.88f9155c.png": "/manage-landing-page-FEM/static/media/avatar-ali.88f9155c.png",
     "static/media/avatar-anisha.484e15bc.png": "/manage-landing-page-FEM/static/media/avatar-anisha.484e15bc.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.07ed101f.js",
     "static/js/2.cc52d4fc.chunk.js",
-    "static/css/main.8229d983.chunk.css",
+    "static/css/main.9465cdb8.chunk.css",
     "static/js/main.e5beb0e6.chunk.js"
   ]
 }
