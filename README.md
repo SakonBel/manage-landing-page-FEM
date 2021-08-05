@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -30,9 +30,6 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Screenshot
-
-![./Desktop-Sunnyside-Agency.png]
-![./Mobile-Sunnyside-Agency.png]
 
 ### Links
 
@@ -95,5 +92,6 @@ This landing page is kind of past-time project for me, yet it show me a lot of s
 ## Author
 
 Made by Sakon Plangklang
+
 - Frontend Mentor - [@SakonSabel](https://www.frontendmentor.io/profile/SakonSabel)
 - Twitter - [@WhitePhantoms](https://twitter.com/WhitePhantoms)
